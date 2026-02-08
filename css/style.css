@@ -796,6 +796,105 @@ footer a:hover { color: white; }
     transform: translateX(0);
 }
 
+
+/* --- Page Références (Nouveau Design) --- */
+
+.client-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto 4rem;
+    padding: 0 1rem;
+}
+
+.client-category-card {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid #eee;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client-category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-green);
+}
+
+.category-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(69, 130, 16, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary-green);
+    font-size: 1.5rem;
+}
+
+.client-category-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-blue);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.client-category-card p {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.quote-container {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    position: relative;
+    padding: 3rem 2rem;
+    background: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.quote-icon {
+    font-size: 3rem;
+    color: rgba(0, 75, 141, 0.1);
+    position: absolute;
+    top: -1.5rem;
+    left: 2rem;
+    background: #f8f9fa;
+    padding: 0 10px;
+}
+
+.highlight-quote {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.quote-sub {
+    font-style: italic;
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
 .staggered-slide img {
     max-width: 55%;
     border-radius: var(--radius-md);
