@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- 
+        CONFIGURATION DE BASE DE LA PAGE 
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITRE ET DESCRIPTION (REFERENCEMENT GOOGLE) -->
+    <title>Particuliers - Débarras Maison & Appartement | MDS Picardie</title>
+    <meta name="description"
+        content="Services de débarras pour particuliers : vide maison, appartement, cave, grenier. Intervention rapide en Picardie.">
+
+    <!-- POLICES D'ECRITURE (Google Fonts) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ICONS (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- FICHIER DE STYLE PRINCIPAL -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 
+        =================================================================
+        EN-TÊTE (HEADER)
+        Identique à l'accueil, mais le lien 'Particuliers' est actif.
+        =================================================================
+    -->
+    <header>
+
+        <div class="main-nav-bar">
+            <div class="container nav-container">
+
+                <!-- LOGO -->
+                <!-- Pour changer le logo: remplacez 'logo.png' dans le dossier 'images' ou changez le nom ici -->
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="MDS Picardie Logo">
+                </a>
+
+                <!-- MENU PRINCIPAL (ORDINATEUR) -->
+                <!-- Chaque bloc <a> correspond à un bouton du menu -->
+                <nav class="icon-nav">
+                    <!-- Bouton Accueil -->
+                    <a href="index.html" class="nav-item">
+                        <i class="fas fa-home"></i> <!-- Icône maison -->
+                        <span class="nav-title">ACCUEIL</span> <!-- Titre -->
+                        <span class="nav-sub">BIENVENUE!</span> <!-- Sous-titre -->
+                    </a>
+                    <!-- Bouton Particuliers -->
+                    <a href="particuliers.html" class="nav-item active">
+                        <i class="fas fa-pen"></i>
+                        <span class="nav-title">PARTICULIERS</span>
+                        <span class="nav-sub">SERVICES</span>
+                    </a>
+                    <!-- Bouton Professionnels -->
+                    <a href="professionnels.html" class="nav-item">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="nav-title">PROFESSIONNELS</span>
+                        <span class="nav-sub">NOS SOLUTIONS</span>
+                    </a>
+                    <!-- Bouton Références -->
+                    <a href="references.html" class="nav-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span class="nav-title">RÉFÉRENCES</span>
+                        <span class="nav-sub">NOS CLIENTS</span>
+                    </a>
+                    <!-- Bouton Avis Clients -->
+                    <a href="avis-clients.html" class="nav-item">
+                        <i class="fas fa-star"></i>
+                        <span class="nav-title">AVIS CLIENTS</span>
+                        <span class="nav-sub">TEMOIGNAGES</span>
+                    </a>
+                </nav>
+
+                <!-- BOUTONS D'ACTION (DROITE) -->
+                <div class="header-actions">
+                    <!-- Numéro de téléphone cliquable -->
+                    <a href="tel:0344926884" class="header-phone">
+                        <i class="fas fa-phone"></i> 03 44 92 68 84
+                    </a>
+                    <!-- Bouton Devis -->
+                    <a href="contact.html" class="btn-header">
+                        Devis Gratuit
+                    </a>
+                </div>
+
+                <!-- MENU MOBILE (3 petites barres) -->
+                <div class="mobile-toggle" aria-label="Ouvrir le menu" role="button" tabindex="0">☰</div>
+
+                <!-- LIENS MENU MOBILE (Caché par défaut sur ordi) -->
+                <nav class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="particuliers.html">Particuliers</a>
+                    <a href="professionnels.html">Professionnels</a>
+                    <a href="references.html">Références</a>
+                    <a href="avis-clients.html">Avis Clients</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 
+        =================================================================
+        SECTION HERO (Bandeau Titre)
+        =================================================================
+    -->
+    <section class="hero" style="min-height: 300px; display: flex; align-items: center; justify-content: center;">
+        <div class="hero-content text-center" style="max-width: 800px; margin: 0 auto; color: white;">
+            <!-- TITRE DE LA PAGE -->
+            <h1>Services pour Particuliers</h1>
+            <!-- DESCRIPTION COURTE -->
+            <p style="color: white; opacity: 1;">Débarras complet de maison, appartement, cave et grenier.</p>
+        </div>
+    </section>
+
+    <!-- 
+        =================================================================
+        CONTENU PRINCIPAL
+        =================================================================
+    -->
+    <section class="section">
+        <div class="container">
+
+            <!-- 1. INTRODUCTION (Texte à gauche, Image à droite) -->
+            <div class="intro-grid">
+                <!-- TEXTE -->
+                <div class="intro-text">
+                    <h2>Débarras, vide maison de la cave au grenier</h2>
+                    <p>Qu’il s’agisse d’un vide maison complet ou d’un enlèvement d'encombrant dans un
+                        appartement, une cave, un grenier, un garage, une dépendance, une résidence secondaire,
+                        un local encombré, nous vous proposons nos services de débarras de vos encombrants au
+                        meilleur prix.</p>
+                    <p>Les déchets et encombrants sont correctement triés – bois – métaux – papiers, cartons,
+                        plastiques, appareils électro ménagers – déchets toxiques (peintures, solvants,
+                        médicaments, etc.) puis transportés vers les différents centres de tris régionaux ou
+                        vers nos partenaires associatifs.</p>
+                    <!-- MESSAGE IMPORTANT (Vert) -->
+                    <p class="text-green">Détendez-vous !
+                        Tout sera bientôt terminé. MAUGER DEBARRAS SERVICES</p>
+                </div>
+                <!-- IMAGE D'ILLUSTRATION -->
+                <div class="intro-image"
+                    style="background: #ffe0b2; height: 350px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #e65100; font-size: 1.5rem; font-weight: bold;">
+                    PHOTO 1 (MAISON)
+                </div>
+            </div>
+
+            <!-- 2. LES 3 TYPES DE DEBARRAS (Cartes) -->
+            <div class="process-grid">
+                <!-- CARTE 1: Débarras sur mesure -->
+                <div class="process-card">
+                    <div class="step-number"><i class="fas fa-tools"></i></div>
+                    <h3>Débarras sur mesure</h3>
+                    <p>Chaque chantier est différent, nos équipes interviennent avec des équipements
+                        appropriés et s'adaptent à chaque situation.</p>
+                    <img src="images/debarras_service.png" alt="Service Débarras" class="service-card-img">
+                </div>
+                <!-- CARTE 2: Achat / Valorisation -->
+                <div class="process-card">
+                    <div class="step-number"><i class="fas fa-euro-sign"></i></div>
+                    <h3>Achat sous condition</h3>
+                    <p>Reprise des objets, meubles..., en fonction de leurs valeurs actuelles, ils seront
+                        déduits du coût du débarras.</p>
+                    <img src="images/achat_debarras.jpg" alt="Achat Meubles" class="service-card-img">
+                </div>
+                <!-- CARTE 3: Engagements -->
+                <div class="process-card">
+                    <div class="step-number"><i class="fas fa-handshake"></i></div>
+                    <h3>Nos engagements</h3>
+                    <p>Devis gratuits, tarifs compétitifs, respect du contrat, intervention rapide, soignée
+                        et en toute discrétion.</p>
+                    <img src="images/nos_engagements.png" alt="Nos Engagements" class="service-card-img">
+                </div>
+            </div>
+
+            <!-- 3. PHOTOS AVANT / APRES -->
+            <div style="margin-top: 5rem; text-align: center;">
+                <h3 style="margin-bottom: 2rem; font-size: 1.8rem;">Quelques réalisations avant / après</h3>
+
+                <!-- Conteneur du Diaporama -->
+                <div id="staggered-slideshow" class="ba-static-container">
+
+                    <!-- SLIDE 1 (Active) -->
+                    <div class="staggered-slide active">
+                        <!-- Photo 1 (Arrière plan gauche) -->
+                        <img src="https://placehold.co/600x400/004B8D/FFFFFF?text=Photo+1+(Bleu)" alt="Photo 1">
+                        <!-- Photo 2 (Premier plan droite) -->
+                        <img src="https://placehold.co/600x400/458210/FFFFFF?text=Photo+2+(Vert)" alt="Photo 2">
+                    </div>
+
+                    <!-- SLIDE 2 (Suivant) -->
+                    <!-- Pour ajouter des slides, copiez ce bloc complet et changez les images -->
+                    <div class="staggered-slide">
+                        <!-- Photo 3 -->
+                        <img src="https://placehold.co/600x400/800080/FFFFFF?text=Photo+3+(Violet)" alt="Photo 3">
+                        <!-- Photo 4 -->
+                        <img src="https://placehold.co/600x400/FFA500/FFFFFF?text=Photo+4+(Orange)" alt="Photo 4">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 
+        =================================================================
+        PIED DE PAGE (FOOTER)
+        Apparaît sur toutes les pages.
+        =================================================================
+    -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>MDS PICARDIE</h3>
+                    <p>Mauger Débarras Services<br>
+                        268, rue de la Terrière<br>
+                        60750 Choisy Au Bac</p>
+                    <p style="margin-top: 1rem;">
+                        <strong>Tél:</strong> 03 44 92 68 84<br>
+                        <strong>Mobile:</strong> 06 95 18 70 73<br>
+                        <strong>Email:</strong> <a href="mailto:contact@mds-picardie.fr"
+                            style="color:white; text-decoration: underline;">contact@mds-picardie.fr</a>
+                    </p>
+                </div>
+                <div>
+                    <h3>Liens Utiles</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="particuliers.html">Services Particuliers</a></li>
+                        <li><a href="professionnels.html">Services Professionnels</a></li>
+                        <li><a href="references.html">Nos Références</a></li>
+                        <li><a href="avis-clients.html">Avis Clients</a></li>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons" style="display: flex; gap: 15px; margin-top: 1rem; align-items: center;">
+                        <a href="https://www.facebook.com/MaugerDebarrasServices/" target="_blank" aria-label="Facebook"
+                            style="font-size: 2rem; color: white;"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/maugerdebarrasservices/" target="_blank"
+                            aria-label="LinkedIn" style="font-size: 2rem; color: white;"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/DebarrasMauger" target="_blank" aria-label="X"
+                            style="font-size: 2rem; color: white;"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.pagesjaunes.fr/pros/54901272" target="_blank" aria-label="PagesJaunes"
+                            style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #FFD200; border-radius: 4px; color: black; font-weight: bold; font-size: 0.8rem; text-decoration: none;">PJ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 3rem; font-size: 0.9rem;">
+                &copy; 2026 MDS Picardie.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

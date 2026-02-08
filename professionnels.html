@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- CONFIGURATION DE BASE -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITRE ET DESCRIPTION -->
+    <title>Professionnels - Débarras Entreprise & Bureaux | MDS Picardie</title>
+    <meta name="description"
+        content="Services de débarras pour professionnels : bureaux, archives, matériel informatique, entrepôts. Intervention rapide.">
+
+    <!-- POLICES ET ICONS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS PRINCIPAL -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 
+        =================================================================
+        EN-TÊTE (HEADER)
+        Menu actif : PROFESSIONNELS
+        =================================================================
+    -->
+    <header>
+
+        <div class="main-nav-bar">
+            <div class="container nav-container">
+
+                <!-- LOGO -->
+                <!-- Pour changer le logo: remplacez 'logo.png' dans le dossier 'images' ou changez le nom ici -->
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="MDS Picardie Logo">
+                </a>
+
+                <!-- MENU PRINCIPAL (ORDINATEUR) -->
+                <!-- Chaque bloc <a> correspond à un bouton du menu -->
+                <nav class="icon-nav">
+                    <!-- Bouton Accueil -->
+                    <a href="index.html" class="nav-item">
+                        <i class="fas fa-home"></i> <!-- Icône maison -->
+                        <span class="nav-title">ACCUEIL</span> <!-- Titre -->
+                        <span class="nav-sub">BIENVENUE!</span> <!-- Sous-titre -->
+                    </a>
+                    <!-- Bouton Particuliers -->
+                    <a href="particuliers.html" class="nav-item">
+                        <i class="fas fa-pen"></i>
+                        <span class="nav-title">PARTICULIERS</span>
+                        <span class="nav-sub">SERVICES</span>
+                    </a>
+                    <!-- Bouton Professionnels -->
+                    <a href="professionnels.html" class="nav-item active">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="nav-title">PROFESSIONNELS</span>
+                        <span class="nav-sub">NOS SOLUTIONS</span>
+                    </a>
+                    <!-- Bouton Références -->
+                    <a href="references.html" class="nav-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span class="nav-title">RÉFÉRENCES</span>
+                        <span class="nav-sub">NOS CLIENTS</span>
+                    </a>
+                    <!-- Bouton Avis Clients -->
+                    <a href="avis-clients.html" class="nav-item">
+                        <i class="fas fa-star"></i>
+                        <span class="nav-title">AVIS CLIENTS</span>
+                        <span class="nav-sub">TEMOIGNAGES</span>
+                    </a>
+                </nav>
+
+                <!-- BOUTONS D'ACTION (DROITE) -->
+                <div class="header-actions">
+                    <!-- Numéro de téléphone cliquable -->
+                    <a href="tel:0344926884" class="header-phone">
+                        <i class="fas fa-phone"></i> 03 44 92 68 84
+                    </a>
+                    <!-- Bouton Devis -->
+                    <a href="contact.html" class="btn-header">
+                        Devis Gratuit
+                    </a>
+                </div>
+
+                <!-- MENU MOBILE (3 petites barres) -->
+                <div class="mobile-toggle" aria-label="Ouvrir le menu" role="button" tabindex="0">☰</div>
+
+                <!-- LIENS MENU MOBILE (Caché par défaut sur ordi) -->
+                <nav class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="particuliers.html">Particuliers</a>
+                    <a href="professionnels.html">Professionnels</a>
+                    <a href="references.html">Références</a>
+                    <a href="avis-clients.html">Avis Clients</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 
+        =================================================================
+        SECTION HERO (Bandeau Titre)
+        =================================================================
+    -->
+    <section class="hero" style="min-height: 300px; display: flex; align-items: center; justify-content: center;">
+        <div class="hero-content text-center" style="max-width: 800px; margin: 0 auto; color: white;">
+            <h1>Services pour Professionnels</h1>
+            <p style="color: white; opacity: 1;">Débarras de bureaux, destruction d'archives et gestion de déchets D3E.
+            </p>
+        </div>
+    </section>
+
+    <!-- 
+        =================================================================
+        CONTENU PRINCIPAL
+        =================================================================
+    -->
+    <section class="section" style="padding-top: 3rem; background-color: #f8f9fa;">
+        <div class="container">
+            <div class="services-layout">
+
+                <!-- LISTE DES SOLUTIONS (Pleine Largeur) -->
+                <div class="services-list services-list-wide" style="flex: auto; text-align: center;">
+                    <h2 style="font-size: 2rem; color: var(--primary-blue); margin-bottom: 0.5rem;">Nos solutions pour
+                        la collecte de vos encombrants</h2>
+                    <div style="width: 50px; height: 3px; background: var(--primary-green); margin: 0 auto 1.5rem;">
+                    </div>
+                    <p style="max-width: 700px; margin: 0 auto 2rem; font-size: 1.1rem;">Que vous déménagiez, remplaciez
+                        votre mobilier ou cessiez votre activité, MDS Picardie organise l'enlèvement et le recyclage
+                        complet de vos encombrants en toute sérénité.</p>
+
+                    <!-- GRILLE DES 6 SERVICES (IMAGES OFFICIELLES) -->
+                    <div class="services-grid-pro">
+
+                        <!-- Service 1 : Mobilier -->
+                        <div class="process-card process-card-image">
+                            <div
+                                style="background: #bbdefb; height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: #0d47a1; font-weight: bold; font-size: 1.2rem;">
+                                PHOTO 1</div>
+                            <div class="card-content">
+                                <h3>Mobilier de Bureau</h3>
+                                <p>Enlèvement et recyclage de mobilier vétuste (bureaux, armoires, chaises). Dirigé vers
+                                    filières associatives ou ICPE.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service 2 : Rayonnages -->
+                        <div class="process-card process-card-image">
+                            <div
+                                style="background: #c8e6c9; height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: #1b5e20; font-weight: bold; font-size: 1.2rem;">
+                                PHOTO 2</div>
+                            <div class="card-content">
+                                <h3>Rayonnages & Agencement</h3>
+                                <p>Démontage et enlèvement de rayonnages, gondoles, présentoirs et comptoirs de magasins
+                                    avant travaux.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service 3 : Archives -->
+                        <div class="process-card process-card-image">
+                            <div
+                                style="background: #ffecb3; height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: #ff6f00; font-weight: bold; font-size: 1.2rem;">
+                                PHOTO 3</div>
+                            <div class="card-content">
+                                <h3>Destruction d'Archives</h3>
+                                <p>Destruction sécurisée de documents confidentiels (classeurs, dossiers) avec remise de
+                                    <strong>Certificat de destruction</strong>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Service 4 : Immo -->
+                        <div class="process-card process-card-image">
+                            <div
+                                style="background: #e1bee7; height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: #4a148c; font-weight: bold; font-size: 1.2rem;">
+                                PHOTO 4</div>
+                            <div class="card-content">
+                                <h3>Professions Immobilières</h3>
+                                <p>Solutions pour Agents immobiliers, Notaires, Syndics, SCI... Débarras partiel ou
+                                    total de tous types de logements.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service 5 : Informatique -->
+                        <div class="process-card process-card-image">
+                            <div
+                                style="background: #b2dfdb; height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: #004d40; font-weight: bold; font-size: 1.2rem;">
+                                PHOTO 5</div>
+                            <div class="card-content">
+                                <h3>Matériel Bureautique</h3>
+                                <p>Collecte et recyclage DEEE : ordinateurs, écrans, photocopieurs. Transport vers
+                                    centres spécialisés.</p>
+                            </div>
+                        </div>
+
+                        <!-- Service 6 : Volumineux -->
+                        <div class="process-card process-card-image">
+                            <div
+                                style="background: #cfd8dc; height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: #37474f; font-weight: bold; font-size: 1.2rem;">
+                                PHOTO 6</div>
+                            <div class="card-content">
+                                <h3>Appareils Volumineux</h3>
+                                <p>Enlèvement d'équipements lourds : machines de labo, vitrines réfrigérées, onduleurs,
+                                    transformateurs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BLOC ICPE -->
+                    <div
+                        style="margin-top: 4rem; background: white; padding: 2rem; border-radius: var(--radius-md); text-align: left; border: 1px solid #e0e0e0; box-shadow: var(--shadow-sm);">
+                        <h3 style="color: var(--primary-green); margin-bottom: 1rem;">Elimination des déchets (ICPE)
+                        </h3>
+                        <p>Les producteurs de déchets sont tenus d'assurer leur gestion dans le respect de la
+                            réglementation. MDS Picardie garantit l'élimination dans des installations classées pour la
+                            protection de l'environnement (ICPE).</p>
+                        <ul style="list-style: disc; padding-left: 20px; color: var(--text-light);">
+                            <li>Valorisation et recyclage des déchets (matières premières).</li>
+                            <li>Collecte, transport, tri et traitement sécurisé.</li>
+                            <li>Respect strict des normes environnementales.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Box Contact supprimée comme demandé -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        =================================================================
+        PIED DE PAGE (FOOTER)
+        =================================================================
+    -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>MDS PICARDIE</h3>
+                    <p>Mauger Débarras Services<br>
+                        268, rue de la Terrière<br>
+                        60750 Choisy Au Bac</p>
+                    <p style="margin-top: 1rem;">
+                        <strong>Tél:</strong> 03 44 92 68 84<br>
+                        <strong>Mobile:</strong> 06 95 18 70 73<br>
+                        <strong>Email:</strong> <a href="mailto:contact@mds-picardie.fr"
+                            style="color:white; text-decoration: underline;">contact@mds-picardie.fr</a>
+                    </p>
+                </div>
+                <div>
+                    <h3>Liens Utiles</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="particuliers.html">Services Particuliers</a></li>
+                        <li><a href="professionnels.html">Services Professionnels</a></li>
+                        <li><a href="references.html">Nos Références</a></li>
+                        <li><a href="avis-clients.html">Avis Clients</a></li>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons" style="display: flex; gap: 15px; margin-top: 1rem; align-items: center;">
+                        <a href="https://www.facebook.com/MaugerDebarrasServices/" target="_blank" aria-label="Facebook"
+                            style="font-size: 2rem; color: white;"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/maugerdebarrasservices/" target="_blank"
+                            aria-label="LinkedIn" style="font-size: 2rem; color: white;"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/DebarrasMauger" target="_blank" aria-label="X"
+                            style="font-size: 2rem; color: white;"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.pagesjaunes.fr/pros/54901272" target="_blank" aria-label="PagesJaunes"
+                            style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #FFD200; border-radius: 4px; color: black; font-weight: bold; font-size: 0.8rem; text-decoration: none;">PJ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 3rem; font-size: 0.9rem;">&copy; 2026 MDS Picardie.</div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

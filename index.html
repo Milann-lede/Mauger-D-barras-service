@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- 
+        CONFIGURATION DE BASE DE LA PAGE 
+        Ne pas modifier les lignes ci-dessous sauf si vous savez ce que vous faites.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+        TITRE ET DESCRIPTION (REFERENCEMENT GOOGLE)
+        C'est ici qu'on définit ce qui apparaît dans les résultats de recherche Google.
+    -->
+    <!-- Titre de l'onglet du navigateur -->
+    <title>MDS Picardie | Votre expert en débarras dans l'Oise, l'Aisne et la Somme</title>
+    <!-- Description courte qui apparaît sous le titre dans Google -->
+    <meta name="description"
+        content="MAUGER DEBARRAS SERVICES, expert en débarras et enlèvement d'encombrants sur la Picardie (Oise, Aisne, Somme). Devis gratuit et intervention rapide.">
+
+    <!-- POLICES D'ECRITURE (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ICONS (FontAwesome) - Permet d'afficher les petites icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- FICHIER DE STYLE PRINCIPAL - C'est ici que le design est géré -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 
+        =================================================================
+        EN-TÊTE (HEADER) - Apparaît sur toutes les pages
+        Contient : Logo, Menu, Numéro de téléphone, Bouton Devis
+        =================================================================
+    -->
+    <header>
+
+        <div class="main-nav-bar">
+            <div class="container nav-container">
+
+                <!-- LOGO -->
+                <!-- Pour changer le logo: remplacez 'logo.png' dans le dossier 'images' ou changez le nom ici -->
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="MDS Picardie Logo">
+                </a>
+
+                <!-- MENU PRINCIPAL (ORDINATEUR) -->
+                <!-- Chaque bloc <a> correspond à un bouton du menu -->
+                <nav class="icon-nav">
+                    <!-- Bouton Accueil -->
+                    <a href="index.html" class="nav-item active">
+                        <i class="fas fa-home"></i> <!-- Icône maison -->
+                        <span class="nav-title">ACCUEIL</span> <!-- Titre -->
+                        <span class="nav-sub">BIENVENUE!</span> <!-- Sous-titre -->
+                    </a>
+                    <!-- Bouton Particuliers -->
+                    <a href="particuliers.html" class="nav-item">
+                        <i class="fas fa-pen"></i>
+                        <span class="nav-title">PARTICULIERS</span>
+                        <span class="nav-sub">SERVICES</span>
+                    </a>
+                    <!-- Bouton Professionnels -->
+                    <a href="professionnels.html" class="nav-item">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="nav-title">PROFESSIONNELS</span>
+                        <span class="nav-sub">NOS SOLUTIONS</span>
+                    </a>
+                    <!-- Bouton Références -->
+                    <a href="references.html" class="nav-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span class="nav-title">RÉFÉRENCES</span>
+                        <span class="nav-sub">NOS CLIENTS</span>
+                    </a>
+                    <!-- Bouton Avis Clients -->
+                    <a href="avis-clients.html" class="nav-item">
+                        <i class="fas fa-star"></i>
+                        <span class="nav-title">AVIS CLIENTS</span>
+                        <span class="nav-sub">TEMOIGNAGES</span>
+                    </a>
+                </nav>
+
+                <!-- BOUTONS D'ACTION (DROITE) -->
+                <div class="header-actions">
+                    <!-- Numéro de téléphone cliquable -->
+                    <a href="tel:0344926884" class="header-phone">
+                        <i class="fas fa-phone"></i> 03 44 92 68 84
+                    </a>
+                    <!-- Bouton Devis -->
+                    <a href="contact.html" class="btn-header">
+                        Devis Gratuit
+                    </a>
+                </div>
+
+                <!-- MENU MOBILE (3 petites barres) -->
+                <div class="mobile-toggle" aria-label="Ouvrir le menu" role="button" tabindex="0">☰</div>
+
+                <!-- LIENS MENU MOBILE (Caché par défaut sur ordi) -->
+                <nav class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="particuliers.html">Particuliers</a>
+                    <a href="professionnels.html">Professionnels</a>
+                    <a href="references.html">Références</a>
+                    <a href="avis-clients.html">Avis Clients</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 
+        =================================================================
+        SECTION HERO (Bandeau principal)
+        C'est la première chose que l'on voit en arrivant sur le site.
+        =================================================================
+    -->
+    <section id="accueil" class="hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <!-- TITRE PRINCIPAL -->
+                <!-- Les balises <span> permettent de mettre en couleur/style différent -->
+                <h1>Nous faisons disparaître vos encombrants. <span>D'un simple geste.</span></h1>
+
+                <!-- SOUS-TITRE / SLOGAN -->
+                <p>Votre expert en débarras dans l'Oise, l'Aisne et la Somme.</p>
+
+
+            </div>
+
+            <!-- IMAGE HERO -->
+            <div class="hero-image"></div>
+        </div>
+    </section>
+
+    <!-- 
+        =================================================================
+        SECTION PROCESSUS (Comment ça marche ?)
+        4 étapes expliquées avec des cartes.
+        =================================================================
+    -->
+    <section id="processus" class="section bg-light">
+        <div class="container">
+            <!-- TITRE DE LA SECTION -->
+            <h2 class="text-center">Notre processus simple</h2>
+            <p class="text-center">Comment nous collectons vos encombrants en 4 étapes.</p>
+
+            <div class="process-grid">
+                <!-- ETAPE 1 -->
+                <div class="process-card">
+                    <div class="step-number">1</div>
+                    <h3>Contactez-nous</h3>
+                    <p>Prenez rendez-vous en ligne ou appelez-nous au 03 44 92 68 84. Nos devis sont gratuits.</p>
+                </div>
+                <!-- ETAPE 2 -->
+                <div class="process-card">
+                    <div class="step-number">2</div>
+                    <h3>Devis adapté</h3>
+                    <p>Indiquez-nous ce qu’il faut enlever. Notre tarification est calculée au volume, tout inclus.</p>
+                </div>
+                <!-- ETAPE 3 -->
+                <div class="process-card">
+                    <div class="step-number">3</div>
+                    <h3>Collecte</h3>
+                    <p>Nous enlevons vos déchets où qu'ils se trouvent, nous chargeons, et nous passons le balai !</p>
+                </div>
+                <!-- ETAPE 4 -->
+                <div class="process-card">
+                    <div class="step-number">4</div>
+                    <h3>Recyclage</h3>
+                    <p>Nous trions et acheminons vos déchets vers des filières de recyclage et associations responsable.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        =================================================================
+        SECTION VISION (ECOLOGIE)
+        Texte à gauche, image à droite.
+        =================================================================
+    -->
+    <section class="vision-section">
+        <div class="vision-grid">
+            <div class="vision-content">
+                <h2>Notre vision environnementale</h2>
+                <p>Nous croyons que ce que nous faisons aujourd’hui fera une différence pour les générations actuelles
+                    et futures. Nous sommes engagés à réduire l'enfouissement en favorisant le recyclage, le don et la
+                    réutilisation.</p>
+
+                <!-- Bouton En Savoir Plus -->
+                <a href="contact.html" class="btn"
+                    style="background:white; color:var(--primary-green); margin-top:20px;">En
+                    Savoir Plus</a>
+            </div>
+            <div class="vision-image">
+                <!-- Image Ecologie. Pour changer: remplacer 'vision_ecology.png' dans le dossier 'images' -->
+                <div
+                    style="background: #e6f4ea; width: 100%; height: 100%; min-height: 300px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #2e7d32; font-size: 1.5rem; font-weight: bold;">
+                    PHOTO 3 (ECO)
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        =================================================================
+        SECTION SERVICES / ZONES D'INTERVENTION (Carte + Liste)
+        =================================================================
+    -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="text-center">Débarras Picardie</h2>
+            <p class="text-center">Nous intervenons rapidement dans toute la région.</p>
+
+            <div class="services-layout">
+                <!-- CARTE DE PICARDIE -->
+                <div class="services-map">
+                    <img src="images/carte-de-picardie.png" alt="Carte détaillée de la Picardie">
+                </div>
+
+                <!-- LISTE DES DEPARTEMENTS -->
+                <div class="services-list">
+                    <!-- Bloc OISE (60) -->
+                    <div class="service-item">
+                        <div class="service-content">
+                            <h3><i class="fas fa-map-marker-alt text-green"></i> Oise (60)</h3>
+                            <p>Beauvais, Compiègne, Creil, Nogent-sur-Oise, Senlis, Noyon, Crépy-en-Valois...</p>
+                            <a href="debarras-oise.html" class="text-primary">Voir les villes &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Bloc AISNE (02) -->
+                    <div class="service-item">
+                        <div class="service-content">
+                            <h3><i class="fas fa-map-marker-alt text-green"></i> Aisne (02)</h3>
+                            <p>Saint-Quentin, Soissons, Laon, Château-Thierry, Tergnier, Chauny...</p>
+                            <a href="debarras-aisne.html" class="text-primary">Voir les villes &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Bloc SOMME (80) -->
+                    <div class="service-item">
+                        <div class="service-content">
+                            <h3><i class="fas fa-map-marker-alt text-green"></i> Somme (80)</h3>
+                            <p>Amiens, Abbeville, Albert, Péronne, Roye, Montdidier, Ham...</p>
+                            <a href="debarras-somme.html" class="text-primary">Voir les villes &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        =================================================================
+        SECTION FAQ (Questions Fréquentes)
+        =================================================================
+    -->
+    <section id="faq" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">Questions Fréquentes</h2>
+            <div class="faq-container" style="max-width: 800px; margin: 2rem auto;">
+
+                <!-- Question 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">Quels types d'encombrants retirez-vous ? <span>+</span></div>
+                    <div class="faq-answer">
+                        <p>Nous retirons presque tout : mobiliers, électroménagers, bibelots, vaisselle, livres, outils,
+                            ainsi que les archives de bureau et matériel informatique.</p>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">Combien ça coûte ? <span>+</span></div>
+                    <div class="faq-answer">
+                        <p>Le coût est basé sur le volume. Vous ne payez que pour l'espace utilisé dans notre camion.
+                            Nous proposons 3 formules : débarras payant (si peu de valeur), débarras réduit (valeur
+                            déduite du coût), ou débarras gratuit (si la valeur couvre les frais).</p>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">Dois-je être présent ? <span>+</span></div>
+                    <div class="faq-answer">
+                        <p>Pas nécessairement, tant que nous avons accès (clés confiées à un voisin/notaire). La facture
+                            peut être envoyée par email.</p>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">Que deviennent les objets ? <span>+</span></div>
+                    <div class="faq-answer">
+                        <p>Nous privilégions le don aux associations caritatives. Le reste est trié et recyclé en centre
+                            agréé.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+        =================================================================
+        PIED DE PAGE (FOOTER)
+        Informations de contact, liens et copyright.
+        Apparaît sur toutes les pages.
+        =================================================================
+    -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- COLONNE 1 : ADRESSE -->
+                <div>
+                    <h3>MDS PICARDIE</h3>
+                    <p>Mauger Débarras Services<br>
+                        268, rue de la Terrière<br>
+                        60750 Choisy Au Bac</p>
+                    <p style="margin-top: 1rem;">
+                        <strong>Tél:</strong> 03 44 92 68 84<br>
+                        <strong>Mobile:</strong> 06 95 18 70 73<br>
+                        <strong>Email:</strong> <a href="mailto:contact@mds-picardie.fr"
+                            style="color:white; text-decoration: underline;">contact@mds-picardie.fr</a>
+                    </p>
+                </div>
+                <!-- COLONNE 2 : LIENS -->
+                <div>
+                    <h3>Liens Utiles</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="particuliers.html">Services Particuliers</a></li>
+                        <li><a href="professionnels.html">Services Professionnels</a></li>
+                        <li><a href="references.html">Nos Références</a></li>
+                        <li><a href="avis-clients.html">Avis Clients</a></li>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    </ul>
+                </div>
+                <!-- COLONNE 3 : RESEAUX SOCIAUX -->
+                <div>
+                    <h3>Suivez-nous</h3>
+                    <!-- Social Icons styled with FontAwesome -->
+                    <div class="social-icons" style="display: flex; gap: 15px; margin-top: 1rem; align-items: center;">
+                        <a href="https://www.facebook.com/MaugerDebarrasServices/" target="_blank" aria-label="Facebook"
+                            style="font-size: 2rem; color: white;"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/maugerdebarrasservices/" target="_blank"
+                            aria-label="LinkedIn" style="font-size: 2rem; color: white;"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/DebarrasMauger" target="_blank" aria-label="X"
+                            style="font-size: 2rem; color: white;"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.pagesjaunes.fr/pros/54901272" target="_blank" aria-label="PagesJaunes"
+                            style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #FFD200; border-radius: 4px; color: black; font-weight: bold; font-size: 0.8rem; text-decoration: none;">PJ</a>
+                    </div>
+                </div>
+            </div>
+            <!-- COPYRIGHT -->
+            <div class="text-center"
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #444; font-size: 0.9rem;">
+                &copy; 2026 MDS Picardie. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS JAVASCRIPT -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

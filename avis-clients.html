@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- CONFIGURATION DE BASE -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITRE ET DESCRIPTION -->
+    <title>Avis Clients | MDS Picardie</title>
+    <meta name="description"
+        content="Avis clients vérifiés sur Mauger Débarras Services. Découvrez les retours de nos clients sur Google.">
+
+    <!-- POLICES ET ICONS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS PRINCIPAL -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 
+        =================================================================
+        EN-TÊTE (HEADER)
+        Menu actif : AVIS CLIENTS
+        =================================================================
+    -->
+    <header>
+
+        <div class="main-nav-bar">
+            <div class="container nav-container">
+
+                <!-- LOGO -->
+                <!-- Pour changer le logo: remplacez 'logo.png' dans le dossier 'images' ou changez le nom ici -->
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="MDS Picardie Logo">
+                </a>
+
+                <!-- MENU PRINCIPAL (ORDINATEUR) -->
+                <!-- Chaque bloc <a> correspond à un bouton du menu -->
+                <nav class="icon-nav">
+                    <!-- Bouton Accueil -->
+                    <a href="index.html" class="nav-item">
+                        <i class="fas fa-home"></i> <!-- Icône maison -->
+                        <span class="nav-title">ACCUEIL</span> <!-- Titre -->
+                        <span class="nav-sub">BIENVENUE!</span> <!-- Sous-titre -->
+                    </a>
+                    <!-- Bouton Particuliers -->
+                    <a href="particuliers.html" class="nav-item">
+                        <i class="fas fa-pen"></i>
+                        <span class="nav-title">PARTICULIERS</span>
+                        <span class="nav-sub">SERVICES</span>
+                    </a>
+                    <!-- Bouton Professionnels -->
+                    <a href="professionnels.html" class="nav-item">
+                        <i class="fas fa-file-alt"></i>
+                        <span class="nav-title">PROFESSIONNELS</span>
+                        <span class="nav-sub">NOS SOLUTIONS</span>
+                    </a>
+                    <!-- Bouton Références -->
+                    <a href="references.html" class="nav-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span class="nav-title">RÉFÉRENCES</span>
+                        <span class="nav-sub">NOS CLIENTS</span>
+                    </a>
+                    <!-- Bouton Avis Clients -->
+                    <a href="avis-clients.html" class="nav-item active">
+                        <i class="fas fa-star"></i>
+                        <span class="nav-title">AVIS CLIENTS</span>
+                        <span class="nav-sub">TEMOIGNAGES</span>
+                    </a>
+                </nav>
+
+                <!-- BOUTONS D'ACTION (DROITE) -->
+                <div class="header-actions">
+                    <!-- Numéro de téléphone cliquable -->
+                    <a href="tel:0344926884" class="header-phone">
+                        <i class="fas fa-phone"></i> 03 44 92 68 84
+                    </a>
+                    <!-- Bouton Devis -->
+                    <a href="contact.html" class="btn-header">
+                        Devis Gratuit
+                    </a>
+                </div>
+
+                <!-- MENU MOBILE (3 petites barres) -->
+                <div class="mobile-toggle" aria-label="Ouvrir le menu" role="button" tabindex="0">☰</div>
+
+                <!-- LIENS MENU MOBILE (Caché par défaut sur ordi) -->
+                <nav class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="particuliers.html">Particuliers</a>
+                    <a href="professionnels.html">Professionnels</a>
+                    <a href="references.html">Références</a>
+                    <a href="avis-clients.html">Avis Clients</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 
+        =================================================================
+        HERO (Titre)
+        =================================================================
+    -->
+    <section class="hero-centered">
+        <div class="hero-content">
+            <h1>Nos Avis Clients</h1>
+            <p>La satisfaction de nos clients est notre priorité. Moyenne <strong>5/5</strong> sur Google.</p>
+        </div>
+    </section>
+
+    <!-- 
+        =================================================================
+        CONTENU (AVIS CLIENTS)
+        =================================================================
+    -->
+    <section class="section">
+        <div class="container">
+
+            <!-- RESUME AVIS GOOGLE -->
+            <div
+                style="text-align: center; margin-bottom: 3rem; background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border: 1px solid #eee;">
+                <h2 style="margin-bottom: 1rem; color: var(--text-dark);">Avis Google vérifiés</h2>
+                <div style="font-size: 3rem; color: #ffc107; margin-bottom: 0.5rem;">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 2rem;">Note moyenne : 5 / 5 (29 avis)
+                </p>
+
+                <a href="https://www.google.com/maps/search/Mauger+D%C3%A9barras+Services+268+Rue+de+la+Terri%C3%A8re+60750+Choisy+Au+Bac+France"
+                    target="_blank" class="btn-google-outline">
+                    <i class="fab fa-google" style="margin-right: 8px;"></i> Voir tous les avis sur Google
+                </a>
+            </div>
+
+            <h2 class="text-center" style="margin-bottom: 2rem;">Extraits de commentaires récents</h2>
+
+            <!-- CARROUSEL AVIS INFINI -->
+            <div class="carousel-container">
+                <div class="carousel-track">
+
+                    <!-- GROUPE 1 (Original) -->
+                    <!-- AVIS 1 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Enlèvement et destruction archives. Service très professionnel,
+                            ponctuel et équipe très sympathique. Nous recommandons vivement."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Dom MATTE</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 2 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Nous avons fait débarrasser une maison et nous vous recommandons
+                            cette société. Une équipe sympathique, devis correct et respecté. Travail soigné, rapide."
+                        </p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- jc b</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 3 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Grand professionnalisme. L'opération s'est déroulée avec une
+                            grande efficacité... il faut souligner la gentillesse des intervenants. Prix très
+                            raisonnable."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Pascal F</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 4 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Très satisfait du service. Après avoir détaillé les
+                            besoins, un rendez-vous a été très vite fixé. Arrivé pile à l'heure convenu, le travail a
+                            été effectué rapidement
+                            et efficacement, le tout de manière sympathique. Le prix est tout à fait convenable. Bref,
+                            je les
+                            recommande !"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Tristan de Blauwe</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 5 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"J’ai fait appel à l’entreprise Mauger en juin pour
+                            débarrasser 2 maisons familiales mais surtout des
+                            caves et dépendances difficiles d’accès. Le devis était
+                            détaillé et raisonnable, le travail a été rigoureux et
+                            rapide,les délais respectés."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Gilbert Poirier</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 6 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Suite au décès de ma Maman je devais débarrasser la
+                            maison. Après avoir donné, vendu et gardé il reste encore
+                            beaucoup de choses. J'ai fait appel à Mauger
+                            Débarras Services... Équipe professionnelle, ponctuelle un
+                            travail très efficace..."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Hervé Quenet</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 7 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"L’entreprise est intervenue chez moi pour débarrasser
+                            divers bâtiments encombrés. Le travail a été rapide et
+                            efficace. Une équipe sympathique et professionnelle."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Mary Urbiha</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 8 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Devis détaillé après visite sur place. Travail rapide et
+                            soigné (centre ville, 2 étages, sans ascenseur). Équipe
+                            ponctuelle, sympathique, professionnelle et efficace.
+                            Je recommande vivement sans aucune réserve."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Pat ITARP</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 9 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Cette entreprise est très sérieuse et le service rendu est
+                            irréprochable. L'équipe prend le plus grand soin lors du déplacement des meubles. A retenir
+                            vraiment sans hésitation, pour un excellent rapport qualité-prix."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Philippe Soumah</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 10 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"J'ai recontacté Mr MAUGER plusieurs années après un premier
+                            chantier. Son devis était le moins cher et son intervention très efficace et rapide. Merci
+                            encore à vous et à votre équipe pour votre écoute et votre professionnalisme."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Guillaume Capiod</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 11 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Nous avons fait débarrasser la maison de nos parents à
+                            Crevecoeur... TRES TRES satisfaits. Equipe jeune et dynamique... Un travail rigoureux,
+                            efficace et organisé... Ils méritent vraiment votre confiance!!! Merci!"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Michele Zuber</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 12 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Excellente prestation de la part de professionnels ponctuels,
+                            sérieux, organisés, et, cela ne gâche rien, sympathiques. 100% recommandés, surtout pour des
+                            moments pas toujours gais, c'est agréable d'être ainsi accompagné."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Laurence Debril</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 13 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Un grand merci à l’équipe qui à débarrassé le pavillon de mes
+                            parents avec une grande efficacité. Personnel super sympa et à l’écoute. Je recommande
+                            vivement cette société qui tiens ces engagements avec le meilleur rapport qualité prix..."
+                        </p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Rodolphe</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 14 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Merci pour votre prestation d'une grande qualité. Efficacité,
+                            sérieux, discrétion, gentillesse et surtout grand professionnalisme. Que dire de plus !
+                            Merci encore ; Je vous souhaite le meilleur pour votre entreprise."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Pascal</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 15 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Très satisfaits du travail effectué dans la maison familiale.
+                            Sérieux, ponctualité, discrétion et grande efficacité d’une équipe sympathique. Tout s’est
+                            déroulé comme prévu. Un grand merci !"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Catherine Bayle</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 16 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Prestation très efficace assurée par une équipe sympathique.
+                            Mauger débarras services m’a ôté une belle épine du pied, et je ferai de nouveau appel à
+                            leurs services si le besoin se représente."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Antoine Bertucat</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 17 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Société sérieuse et très réactive. Enlèvement d'archives
+                            professionnelles programmé en quelques jours, avec remise d'une attestation de destruction.
+                            Je recommande"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Friggeri Patrick</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 18 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Service réactif, rapide et efficace! Avec en plus un devis
+                            raisonnable! Je recommande vivement!"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Elise S</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+
+                    <!-- AVIS 19 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Excellente prestation. Équipe sympathique et professionnelle. Je
+                            recommande chaudement cette entreprise."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Bertrand Schnerb</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 20 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"ponctualité, rapidité, efficacité pour un juste prix. par une
+                            équipe par ailleurs sympathique. sincèrement recommandé."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Vincent L</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 21 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Travail très professionnel. Équipe ponctuelle, efficace et très
+                            sympathique. Je recommande fortement"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- anne charlotte francois</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 22 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Excellent travail très propre sans dégâts et très rapide Très
+                            grande amabilité À recommander"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- evelyne Roux</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 23 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Top entreprise Service impeccable, ponctuel, rapide et très
+                            aimable. Prix raisonnable"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Marie Pierre Bataille</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+
+                    <!-- AVIS 24 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Simple, rapide et efficace ! Je recommande vivement cette équipe
+                            sympathique."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Nadine Bionne</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 25 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Au top! Rapide, Ponctuel,aimable, souriant , efficace et
+                            professionnel."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- solange b</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 26 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Excellent travail , très professionnel."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- JEAN-MICHEL LEFEVRE</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 27 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Super boulot efficace et sérieux"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- zorisse nouri</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+
+                    <!-- GROUPE 2 (Duplicata pour effet infini) -->
+                    <!-- AVIS 1 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Enlèvement et destruction archives. Service très professionnel,
+                            ponctuel et équipe très sympathique. Nous recommandons vivement."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Dom MATTE</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 2 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Nous avons fait débarrasser une maison et nous vous recommandons
+                            cette société. Une équipe sympathique, devis correct et respecté. Travail soigné, rapide."
+                        </p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- jc b</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 3 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Grand professionnalisme. L'opération s'est déroulée avec une
+                            grande efficacité... il faut souligner la gentillesse des intervenants. Prix très
+                            raisonnable."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Pascal F</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 4 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Très satisfait du service. Après avoir détaillé les
+                            besoins, un rendez-vous a été très vite fixé. Arrivé pile à l'heure convenu, le travail a
+                            été effectué rapidement
+                            et efficacement, le tout de manière sympathique. Le prix est tout à fait convenable. Bref,
+                            je les
+                            recommande !"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Tristan de Blauwe</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 5 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"J’ai fait appel à l’entreprise Mauger en juin pour
+                            débarrasser 2 maisons familiales mais surtout des
+                            caves et dépendances difficiles d’accès. Le devis était
+                            détaillé et raisonnable, le travail a été rigoureux et
+                            rapide,les délais respectés."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Gilbert Poirier</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 6 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Suite au décès de ma Maman je devais débarrasser la
+                            maison. Après avoir donné, vendu et gardé il reste encore
+                            beaucoup de choses. J'ai fait appel à Mauger
+                            Débarras Services... Équipe professionnelle, ponctuelle un
+                            travail très efficace..."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Hervé Quenet</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 7 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"L’entreprise est intervenue chez moi pour débarrasser
+                            divers bâtiments encombrés. Le travail a été rapide et
+                            efficace. Une équipe sympathique et professionnelle."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Mary Urbiha</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 8 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Devis détaillé après visite sur place. Travail rapide et
+                            soigné (centre ville, 2 étages, sans ascenseur). Équipe
+                            ponctuelle, sympathique, professionnelle et efficace.
+                            Je recommande vivement sans aucune réserve."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Pat ITARP</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 9 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Cette entreprise est très sérieuse et le service rendu est
+                            irréprochable. L'équipe prend le plus grand soin lors du déplacement des meubles. A retenir
+                            vraiment sans hésitation, pour un excellent rapport qualité-prix."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Philippe Soumah</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 10 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"J'ai recontacté Mr MAUGER plusieurs années après un premier
+                            chantier. Son devis était le moins cher et son intervention très efficace et rapide. Merci
+                            encore à vous et à votre équipe pour votre écoute et votre professionnalisme."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Guillaume Capiod</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 11 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Nous avons fait débarrasser la maison de nos parents à
+                            Crevecoeur... TRES TRES satisfaits. Equipe jeune et dynamique... Un travail rigoureux,
+                            efficace et organisé... Ils méritent vraiment votre confiance!!! Merci!"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Michele Zuber</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 12 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Excellente prestation de la part de professionnels ponctuels,
+                            sérieux, organisés, et, cela ne gâche rien, sympathiques. 100% recommandés, surtout pour des
+                            moments pas toujours gais, c'est agréable d'être ainsi accompagné."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Laurence Debril</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 13 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Un grand merci à l’équipe qui à débarrassé le pavillon de mes
+                            parents avec une grande efficacité. Personnel super sympa et à l’écoute. Je recommande
+                            vivement cette société qui tiens ces engagements avec le meilleur rapport qualité prix..."
+                        </p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Rodolphe</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 14 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Merci pour votre prestation d'une grande qualité. Efficacité,
+                            sérieux, discrétion, gentillesse et surtout grand professionnalisme. Que dire de plus !
+                            Merci encore ; Je vous souhaite le meilleur pour votre entreprise."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Pascal</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 15 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Très satisfaits du travail effectué dans la maison familiale.
+                            Sérieux, ponctualité, discrétion et grande efficacité d’une équipe sympathique. Tout s’est
+                            déroulé comme prévu. Un grand merci !"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Catherine Bayle</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 16 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Prestation très efficace assurée par une équipe sympathique.
+                            Mauger débarras services m’a ôté une belle épine du pied, et je ferai de nouveau appel à
+                            leurs services si le besoin se représente."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Antoine Bertucat</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 17 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Société sérieuse et très réactive. Enlèvement d'archives
+                            professionnelles programmé en quelques jours, avec remise d'une attestation de destruction.
+                            Je recommande"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Friggeri Patrick</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 18 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Service réactif, rapide et efficace! Avec en plus un devis
+                            raisonnable! Je recommande vivement!"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Elise S</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 19 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Excellente prestation. Équipe sympathique et professionnelle. Je
+                            recommande chaudement cette entreprise."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Bertrand Schnerb</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 20 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"ponctualité, rapidité, efficacité pour un juste prix. par une
+                            équipe par ailleurs sympathique. sincèrement recommandé."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Vincent L</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 21 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Travail très professionnel. Équipe ponctuelle, efficace et très
+                            sympathique. Je recommande fortement"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- anne charlotte francois</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 22 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Excellent travail très propre sans dégâts et très rapide Très
+                            grande amabilité À recommander"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- evelyne Roux</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 23 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Top entreprise Service impeccable, ponctuel, rapide et très
+                            aimable. Prix raisonnable"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Marie Pierre Bataille</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 24 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Simple, rapide et efficace ! Je recommande vivement cette équipe
+                            sympathique."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- Nadine Bionne</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 25 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Au top! Rapide, Ponctuel,aimable, souriant , efficace et
+                            professionnel."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- solange b</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 26 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Excellent travail , très professionnel."</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- JEAN-MICHEL LEFEVRE</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                    <!-- AVIS 27 -->
+                    <div class="carousel-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-quote">"Super boulot efficace et sérieux"</p>
+                        <div class="testimonial-meta">
+                            <p class="testimonial-author">- zorisse nouri</p>
+                            <span class="verif"><i class="fab fa-google"></i> Avis Google</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- BOUTON DEPOSER UN AVIS -->
+            <!-- BOUTON DEPOSER UN AVIS -->
+            <div class="cta-block-modern">
+                <h3 style="color: var(--primary-blue); margin-bottom: 1rem; font-size: 1.8rem;">Votre avis compte pour
+                    nous !</h3>
+                <p
+                    style="margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6; color: var(--text-light);">
+                    Vous avez fait appel à nos services ? Partagez votre expérience avec les autres clients.<br>
+                    Cela ne prend que quelques secondes et nous aide énormément.
+                </p>
+                <!-- Lien direct vers la recherche Google qui affiche le bouton "Avis" -->
+                <a href="https://www.google.com/search?q=Mauger+D%C3%A9barras+Services+Choisy+Au+Bac" target="_blank"
+                    class="btn-google-outline">
+                    <i class="fas fa-pen-nib" style="margin-right: 10px;"></i> DÉPOSER UN AVIS GOOGLE
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 
+        =================================================================
+        PIED DE PAGE (FOOTER)
+        =================================================================
+    -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>MDS PICARDIE</h3>
+                    <p>Mauger Débarras Services<br>
+                        268, rue de la Terrière<br>
+                        60750 Choisy Au Bac</p>
+                    <p style="margin-top: 1rem;">
+                        <strong>Tél:</strong> 03 44 92 68 84<br>
+                        <strong>Mobile:</strong> 06 95 18 70 73<br>
+                        <strong>Email:</strong> <a href="mailto:contact@mds-picardie.fr"
+                            style="color:white; text-decoration: underline;">contact@mds-picardie.fr</a>
+                    </p>
+                </div>
+                <div>
+                    <h3>Liens Utiles</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="particuliers.html">Services Particuliers</a></li>
+                        <li><a href="professionnels.html">Services Professionnels</a></li>
+                        <li><a href="references.html">Nos Références</a></li>
+                        <li><a href="avis-clients.html">Avis Clients</a></li>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons" style="display: flex; gap: 15px; margin-top: 1rem; align-items: center;">
+                        <a href="https://www.facebook.com/MaugerDebarrasServices/" target="_blank" aria-label="Facebook"
+                            style="font-size: 2rem; color: white;"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/maugerdebarrasservices/" target="_blank"
+                            aria-label="LinkedIn" style="font-size: 2rem; color: white;"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/DebarrasMauger" target="_blank" aria-label="X"
+                            style="font-size: 2rem; color: white;"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.pagesjaunes.fr/pros/54901272" target="_blank" aria-label="PagesJaunes"
+                            style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #FFD200; border-radius: 4px; color: black; font-weight: bold; font-size: 0.8rem; text-decoration: none;">PJ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-separator">
+                &copy; 2026 MDS Picardie. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
