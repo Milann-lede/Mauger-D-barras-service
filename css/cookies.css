@@ -1,0 +1,139 @@
+/**
+ * STYLES DU BANDEAU D'INFORMATION COOKIES - CONFORMITÉ RGPD
+ * ----------------------------------------------------------
+ * Bandeau simple : le site n'utilise que des cookies techniques.
+ * Design cohérent avec la charte graphique MDS Picardie.
+ */
+
+/* =========================================
+   BANDEAU PRINCIPAL
+   ========================================= */
+#cookie-banner {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    background: linear-gradient(135deg, #1a2a3a 0%, #2C3E50 100%);
+    color: #ffffff;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    transition: bottom 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'DM Sans', sans-serif;
+}
+
+#cookie-banner.cookie-banner-visible {
+    bottom: 0;
+}
+
+.cookie-banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cookie-banner-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.cookie-banner-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #FFD100;
+}
+
+.cookie-banner-text h3 i {
+    margin-right: 0.4rem;
+}
+
+.cookie-banner-text p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.4rem;
+    color: #d0d8e0;
+}
+
+.cookie-banner-text a {
+    color: #FFD100;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.cookie-banner-text a:hover {
+    color: #fff;
+}
+
+.cookie-banner-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* =========================================
+   BOUTON
+   ========================================= */
+.cookie-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.7rem 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.cookie-btn-accept {
+    background: #458210;
+    color: #fff;
+    border-color: #458210;
+}
+
+.cookie-btn-accept:hover {
+    background: #3a6f0d;
+    border-color: #3a6f0d;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(69, 130, 16, 0.4);
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 768px) {
+    .cookie-banner-content {
+        flex-direction: column;
+        padding: 1.25rem;
+        gap: 1rem;
+    }
+
+    .cookie-banner-actions {
+        width: 100%;
+    }
+
+    .cookie-banner-actions .cookie-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.7rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cookie-banner-text h3 {
+        font-size: 1rem;
+    }
+
+    .cookie-banner-text p {
+        font-size: 0.8rem;
+    }
+}

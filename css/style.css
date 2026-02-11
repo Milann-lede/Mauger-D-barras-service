@@ -1096,6 +1096,170 @@ textarea.contact-input-full {
     width: 100%;
 }
 
+/* =========================================
+   MESSAGES DE RÉSULTAT FORMULAIRE (Succès / Erreur)
+   ========================================= */
+.contact-result {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.contact-result-icon {
+    margin-bottom: 1.5rem;
+}
+
+/* Checkmark animé (Succès) */
+.checkmark-circle {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.checkmark-svg {
+    width: 80px;
+    height: 80px;
+}
+
+.checkmark-circle-bg {
+    stroke: #458210;
+    stroke-width: 2;
+    stroke-dasharray: 157;
+    stroke-dashoffset: 157;
+    animation: checkmark-circle-anim 0.6s ease forwards;
+}
+
+.checkmark-path {
+    stroke: #458210;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: checkmark-path-anim 0.4s 0.5s ease forwards;
+}
+
+@keyframes checkmark-circle-anim {
+    to { stroke-dashoffset: 0; }
+}
+
+@keyframes checkmark-path-anim {
+    to { stroke-dashoffset: 0; }
+}
+
+/* Icône erreur */
+.error-circle {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background: #fdf2f2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    color: #e74c3c;
+    animation: error-shake 0.5s ease;
+}
+
+@keyframes error-shake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-8px); }
+    40% { transform: translateX(8px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+}
+
+/* Titres et texte résultat */
+.contact-result-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #458210;
+    margin-bottom: 0.75rem;
+}
+
+.contact-result-text {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Bloc "appeler directement" */
+.contact-result-info {
+    background: #f0f8e8;
+    border: 1px solid #c3e6a0;
+    border-radius: 12px;
+    padding: 1.25rem;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.contact-result-info p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.75rem;
+}
+
+.contact-result-info p i {
+    color: var(--primary-green);
+    margin-right: 0.3rem;
+}
+
+.contact-result-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--primary-green);
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-result-phone:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(69, 130, 16, 0.35);
+}
+
+/* Transition du formulaire */
+#contact-form-wrapper {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Confetti animation */
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0) rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(500px) rotate(720deg) scale(0.3);
+        opacity: 0;
+    }
+}
+
+/* Input focus amélioré */
+.contact-input-full:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(0, 75, 141, 0.12);
+    outline: none;
+}
+
+/* Placeholder */
+.contact-input-full::placeholder {
+    color: #b0b8c0;
+    font-style: italic;
+    font-size: 0.88rem;
+}
+
 .social-links {
     display: flex;
     gap: 10px;

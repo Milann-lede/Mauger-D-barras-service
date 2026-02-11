@@ -19,6 +19,7 @@
 
     <!-- CSS PRINCIPAL -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cookies.css">
 </head>
 
 <body>
@@ -158,54 +159,119 @@
                 </div>
 
                 <!-- COLONNE DROITE : FORMULAIRE -->
-                <div class="booking-card" style="display: block;">
-                    <h3 style="margin-bottom: 1rem;">Envoyez-nous un message</h3>
+                <div class="booking-card" style="display: block;" id="contact-card">
 
-                    <!-- MESSAGE DE SUCCES (Caché par défaut) -->
-                    <!-- S'affiche si le formulaire a été envoyé correctement -->
-                    <div id="success-message"
-                        style="display:none; background:#d4edda; color:#155724; padding:10px; border-radius:4px; margin-bottom:15px;">
-                        Votre message a bien été envoyé ! Nous vous répondrons sous 24h.
+                    <!-- ============================================
+                         MESSAGE DE SUCCÈS (caché par défaut)
+                         S'affiche après envoi réussi, remplace le formulaire
+                         ============================================ -->
+                    <div id="success-message" class="contact-result contact-success" style="display: none;">
+                        <div class="contact-result-icon">
+                            <div class="checkmark-circle">
+                                <svg viewBox="0 0 52 52" class="checkmark-svg">
+                                    <circle cx="26" cy="26" r="25" fill="none" class="checkmark-circle-bg"/>
+                                    <path fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" class="checkmark-path"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="contact-result-title">Message envoyé avec succès !</h3>
+                        <p class="contact-result-text">Merci pour votre demande. Notre équipe vous répondra dans les <strong>plus brefs délais</strong> (généralement sous 24h).</p>
+                        <div class="contact-result-info">
+                            <p><i class="fas fa-phone"></i> Besoin d'une réponse immédiate ?</p>
+                            <a href="tel:0344926884" class="contact-result-phone">
+                                <i class="fas fa-phone-alt"></i> 03 44 92 68 84
+                            </a>
+                        </div>
+                        <button type="button" id="send-another" class="booking-btn contact-btn-full" style="margin-top: 1.5rem; background: var(--primary-blue);">
+                            <i class="fas fa-envelope"></i> Envoyer un autre message
+                        </button>
                     </div>
 
-                    <!-- FORMULAIRE -->
-                    <!-- 'action="send_mail.php"' indique quel fichier traite l'envoi -->
-                    <form action="send_mail.php" method="POST">
-
-                        <!-- Champ NOM -->
-                        <div class="contact-form-group">
-                            <label for="nom" class="contact-label">Nom / Prénom</label>
-                            <input type="text" id="nom" name="nom" class="booking-input contact-input-full" required>
+                    <!-- ============================================
+                         MESSAGE D'ERREUR (caché par défaut)
+                         ============================================ -->
+                    <div id="error-message" class="contact-result contact-error" style="display: none;">
+                        <div class="contact-result-icon">
+                            <div class="error-circle">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
                         </div>
-
-                        <!-- Champ EMAIL -->
-                        <div class="contact-form-group">
-                            <label for="email" class="contact-label">Email</label>
-                            <input type="email" id="email" name="email" class="booking-input contact-input-full"
-                                required>
+                        <h3 class="contact-result-title" style="color: #c0392b;">Oups, une erreur est survenue</h3>
+                        <p class="contact-result-text" id="error-text">Une erreur technique est survenue. Veuillez réessayer.</p>
+                        <div class="contact-result-info" style="background: #fdf2f2; border-color: #e74c3c;">
+                            <p><i class="fas fa-phone"></i> Contactez-nous directement :</p>
+                            <a href="tel:0344926884" class="contact-result-phone" style="background: #c0392b;">
+                                <i class="fas fa-phone-alt"></i> 03 44 92 68 84
+                            </a>
                         </div>
+                        <button type="button" id="retry-send" class="booking-btn contact-btn-full" style="margin-top: 1.5rem; background: var(--primary-blue);">
+                            <i class="fas fa-redo"></i> Réessayer
+                        </button>
+                    </div>
 
-                        <!-- Champ TELEPHONE -->
-                        <div class="contact-form-group">
-                            <label for="phone" class="contact-label">Téléphone</label>
-                            <input type="tel" id="phone" name="phone" class="booking-input contact-input-full" required>
-                        </div>
+                    <!-- ============================================
+                         FORMULAIRE DE CONTACT
+                         ============================================ -->
+                    <div id="contact-form-wrapper">
+                        <h3 style="margin-bottom: 1rem;">Envoyez-nous un message</h3>
 
-                        <!-- Champ VILLE -->
-                        <div class="contact-form-group">
-                            <label for="ville" class="contact-label">Ville d'intervention</label>
-                            <input type="text" id="ville" name="ville" class="booking-input contact-input-full">
-                        </div>
+                        <form id="contact-form" novalidate>
 
-                        <!-- Champ MESSAGE -->
-                        <div class="contact-form-group">
-                            <label for="message" class="contact-label">Message</label>
-                            <textarea id="message" name="message" class="booking-input contact-input-full"></textarea>
-                        </div>
+                            <!-- Champ NOM -->
+                            <div class="contact-form-group">
+                                <label for="nom" class="contact-label">Nom / Prénom *</label>
+                                <input type="text" id="nom" name="nom" class="booking-input contact-input-full" required
+                                    placeholder="Ex : Jean Dupont">
+                            </div>
 
-                        <!-- BOUTON ENVOYER -->
-                        <button type="submit" class="booking-btn contact-btn-full">Envoyer ma demande</button>
-                    </form>
+                            <!-- Champ EMAIL -->
+                            <div class="contact-form-group">
+                                <label for="email" class="contact-label">Email *</label>
+                                <input type="email" id="email" name="email" class="booking-input contact-input-full"
+                                    required placeholder="Ex : jean.dupont@email.com">
+                            </div>
+
+                            <!-- Champ TELEPHONE -->
+                            <div class="contact-form-group">
+                                <label for="phone" class="contact-label">Téléphone *</label>
+                                <input type="tel" id="phone" name="phone" class="booking-input contact-input-full" required
+                                    placeholder="Ex : 06 12 34 56 78">
+                            </div>
+
+                            <!-- Champ VILLE -->
+                            <div class="contact-form-group">
+                                <label for="ville" class="contact-label">Ville d'intervention</label>
+                                <input type="text" id="ville" name="ville" class="booking-input contact-input-full"
+                                    placeholder="Ex : Compiègne, Beauvais...">
+                            </div>
+
+                            <!-- Champ MESSAGE -->
+                            <div class="contact-form-group">
+                                <label for="message" class="contact-label">Message *</label>
+                                <textarea id="message" name="message" class="booking-input contact-input-full" required
+                                    placeholder="Décrivez votre besoin : type de débarras, volume estimé, accès..."></textarea>
+                            </div>
+
+                            <!-- CONSENTEMENT RGPD -->
+                            <div class="contact-form-group" style="margin-top: 0.5rem;">
+                                <label style="display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.85rem; line-height: 1.4; cursor: pointer;">
+                                    <input type="checkbox" name="rgpd_consent" id="rgpd_consent" required
+                                        style="margin-top: 3px; min-width: 18px; min-height: 18px; accent-color: var(--primary-green);">
+                                    <span>En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées 
+                                    pour répondre à ma demande, conformément à la 
+                                    <a href="politique-confidentialite.html" target="_blank" rel="noopener noreferrer" style="color: var(--primary-blue); text-decoration: underline;">politique de confidentialité</a>. *</span>
+                                </label>
+                            </div>
+
+                            <!-- BOUTON ENVOYER -->
+                            <button type="submit" id="submit-btn" class="booking-btn contact-btn-full">
+                                <span id="btn-text"><i class="fas fa-paper-plane"></i> Envoyer ma demande</span>
+                                <span id="btn-loading" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i> Envoi en cours...
+                                </span>
+                            </button>
+                        </form>
+                    </div>
                 </div>
 
             </div>
@@ -241,19 +307,20 @@
                         <li><a href="references.html">Nos Références</a></li>
                         <li><a href="avis-clients.html">Avis Clients</a></li>
                         <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                        <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3>Suivez-nous</h3>
                     <div class="social-icons" style="display: flex; gap: 15px; margin-top: 1rem; align-items: center;">
-                        <a href="https://www.facebook.com/MaugerDebarrasServices/" target="_blank" aria-label="Facebook"
+                        <a href="https://www.facebook.com/MaugerDebarrasServices/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
                             style="font-size: 2rem; color: white;"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/maugerdebarrasservices/" target="_blank"
+                        <a href="https://www.linkedin.com/in/maugerdebarrasservices/" target="_blank" rel="noopener noreferrer"
                             aria-label="LinkedIn" style="font-size: 2rem; color: white;"><i
                                 class="fab fa-linkedin"></i></a>
-                        <a href="https://x.com/DebarrasMauger" target="_blank" aria-label="X"
+                        <a href="https://x.com/DebarrasMauger" target="_blank" rel="noopener noreferrer" aria-label="X"
                             style="font-size: 2rem; color: white;"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.pagesjaunes.fr/pros/54901272" target="_blank" aria-label="PagesJaunes"
+                        <a href="https://www.pagesjaunes.fr/pros/54901272" target="_blank" rel="noopener noreferrer" aria-label="PagesJaunes"
                             style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #FFD200; border-radius: 4px; color: black; font-weight: bold; font-size: 0.8rem; text-decoration: none;">PJ</a>
                     </div>
                 </div>
@@ -266,6 +333,7 @@
 
     <script src="js/script.js"></script>
     <script src="js/custom-form.js"></script>
+    <script src="js/cookies.js"></script>
 </body>
 
 </html>

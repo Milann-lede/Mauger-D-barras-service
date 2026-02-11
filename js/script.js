@@ -65,15 +65,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /**
-     * 4. GESTION DES MESSAGES DE SUCCÈS
-     * ---------------------------------
-     * Affiche un message de confirmation si l'URL contient ?success=1
-     * (généralement après l'envoi du formulaire de contact).
+     * 4. GESTION DES MESSAGES DE SUCCÈS (LEGACY)
+     * -------------------------------------------
+     * La gestion principale est maintenant dans custom-form.js (AJAX).
+     * Ce bloc est conservé comme fallback au cas où ?success=1 est dans l'URL
+     * mais custom-form.js n'est pas chargé (pages sans formulaire).
      */
-    if (window.location.search.includes('success=1')) {
-        const successMsg = document.getElementById('success-message');
-        if (successMsg) successMsg.style.display = 'block';
-    }
 
     /**
      * 5. PRÉ-REMPLISSAGE DU FORMULAIRE (VILLE)
